@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mainBackground:
+    radial-gradient(at 47.036637931034484% 81.04166666666667%,#c0c4c7 0px,transparent 50%),
+    radial-gradient(at 20.959051724137932% 18.541666666666668%, #948e91 0px, transparent 50%),#E2E2E2;
+  --color-navBarBackground: rgb(255 255 255 / 20%);
+  --color-navbarBorderColor: rgb(255 255 255 / 20%);
+  --color-fadeBlack:rgba(0, 0, 0, 0.7);
+}
+@theme{
+  --font-poppins:"Poppins", sans-serif;
+}
+/* Animation */
+
+@keyframes fadein {
+  0%{
+    opacity:0;
+  }
+  30%{
+    opacity: 20;
+  }
+  60%{
+    opacity: 40;
+  }
+  100%{
+    opacity: 100;
+  }
+}
+  .hoverButtonEffect{
+    @apply hover:transition-all hover:ease-in-out hover:animate-[fadein_1s_ease-in-out]
+  }
