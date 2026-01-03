@@ -27,6 +27,3 @@
     opacity: 100;
   }
 }
-  .hoverButtonEffect{
-    @apply hover:transition-all hover:ease-in-out hover:animate-[fadein_1s_ease-in-out]
-  }

@@ -1,45 +1,20 @@
-import {
-  RiHomeLine,
-  RiCodeFill,
-  RiLink,
-  RiUserLine,
-  RiMailLine,
-} from "@remixicon/react";
+import { RiDownloadFill } from "@remixicon/react";
+
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="bg-navBarBackground border border-navbarBorderColor w-2/3 fixed h-[5vh] mt-5 rounded-full flex justify-end">
-      <ul className="flex justify-evenly items-center h-full w-1/3 font-poppins text-lg text-fadeBlack bg-black rounded-full p-1">
-        {/* Home */}
-        <NavLink to="/" end className={({ isActive }) => isActive 
-        ? "bg-amber-300" 
-        : "bg-amber-950"}>
-          {({ isActive }) => (
-            <>
-              <RiHomeLine />
-              {isActive && <span>home</span>}
-            </>
-          )}
-        </NavLink>
+    <div className="bg-navBarBackground border border-navbarBorderColor w-2/3 fixed h-[5vh] mt-5 rounded-full flex justify-end font-poppins ">
+      <div className="w-1/5 justify-center flex items-center font-medium text-lg" ><p>Vatsalya Singh</p></div>
+      <div className="w-4/5 flex justify-center space-x-10 items-center text-fadeBlack " >
+      <NavLink end to={"/"} className="hover:text-black" >Home</NavLink>
+      <NavLink end to={"/"} className="hover:text-black" >Projects</NavLink>
+      <NavLink end to={"/"} className="hover:text-black" >Blog</NavLink>
+      <NavLink end to={"/"} className="hover:text-black" >About me</NavLink>
+      <NavLink end to={"/"} className="hover:text-black" >Contact me</NavLink>
+      </div>
+      <div className="w-1/5 flex justify-center items-center" ><p className="cursor-pointer p-1 pl-4 pr-4 rounded-full text-fadeBlack hover:text-black flex items-center gap-2">Resume <RiDownloadFill className="size-4" /></p></div>
 
-        <NavLink to="/asdf" end className={({ isActive }) => isActive ? "bg-amber-300" : "bg-amber-950"}>
-          <RiCodeFill />
-        </NavLink>
-
-        <NavLink to="/asdf" end className={({ isActive }) => isActive ? "bg-amber-300" : "bg-amber-950"}>
-          <RiLink />
-        </NavLink>
-
-        <NavLink to="/asdfa" end className={({ isActive }) => isActive ? "bg-amber-300" : "bg-amber-950"}>
-          <RiUserLine />
-        </NavLink>
-
-        <NavLink to="/contact" end className={({ isActive }) => isActive ? "bg-amber-300" : "bg-amber-950"}>
-          <RiMailLine />
-        </NavLink>
-
-      </ul>
     </div>
   );
 };
