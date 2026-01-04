@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="bg-navBarBackground border border-navbarBorderColor w-2/3 fixed h-[5vh] mt-5 rounded-full flex justify-end font-poppins ">
+    <div className="bg-navBarBackground border border-navbarBorderColor w-2/3 top-0 fixed h-13 mt-5 rounded-full flex justify-end font-poppins ">
       <div className="w-1/5 justify-center flex items-center font-medium text-lg" ><p>Vatsalya Singh</p></div>
       <div className="w-4/5 flex justify-center space-x-10 items-center text-fadeBlack " >
       <NavLink end to={"/"} className="hover:text-black" >Home</NavLink>

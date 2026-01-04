@@ -1,4 +1,13 @@
 @import "tailwindcss";
+:root{
+  background:var(--color-mainBackground)
+
+}
+@theme{
+  --scrollbar-width: 1px;
+  --scrollbar-thumb: #948e91;
+  --scrollbar-track: transparent;
+}
 
 @theme {
   --color-mainBackground:
@@ -26,4 +35,34 @@
   100%{
     opacity: 100;
   }
+}
+
+/* scroll bar */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+
+/* Firefox */
+* {
+  scrollbar-width:thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
 }

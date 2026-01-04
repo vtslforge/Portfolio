@@ -1,11 +1,15 @@
 import Hero from "./Hero"
 import Navbar from "./Navbar"
+import Skills from "./Skills"
 
 const Home = () => {
   return (
-    <div className='[background:var(--color-mainBackground)] h-screen w-screen justify-center flex overflow-x-hidden'>
+    <div className=' flex-col w-full items-center  flex overflow-x-hidden'>
       <Navbar/>
       <Hero/>
+      <Skills/>
+
+
     </div>
   )
 }
