@@ -1,13 +1,12 @@
 import Hero from "./Hero"
 import Navbar from "./Navbar"
-import Skills from "./Skills"
+// import Skills from "./Skills"
 
 const Home = () => {
   return (
-    <div className=' flex-col w-full items-center  flex overflow-x-hidden'>
-      <Navbar/>
+    <div className='overflow-x-hidden text-white flex flex-col'>
       <Hero/>
-      <Skills/>
+      <Navbar/>
 
 
     </div>

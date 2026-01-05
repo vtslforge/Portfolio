@@ -1,6 +1,6 @@
 @import "tailwindcss";
 :root{
-  background:var(--color-mainBackground)
+    background-color: black;
 
 }
 @theme{
@@ -10,9 +10,6 @@
 }
 
 @theme {
-  --color-mainBackground:
-    radial-gradient(at 47.036637931034484% 81.04166666666667%,#c0c4c7 0px,transparent 50%),
-    radial-gradient(at 20.959051724137932% 18.541666666666668%, #948e91 0px, transparent 50%),#E2E2E2;
   --color-navBarBackground: rgb(255 255 255 / 20%);
   --color-navbarBorderColor: rgb(255 255 255 / 20%);
   --color-fadeBlack:rgba(0, 0, 0, 0.7);
