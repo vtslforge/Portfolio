@@ -44,7 +44,7 @@ const Skills = () => {
               learning, improving my skills, and working on real-world projects
             </h1>
             <h1 className="w-full text-lg mt-6">Education</h1>
-            <p className="w-full opacity-70">Predidency University</p>
+            <p className="w-full opacity-70">Presidency University</p>
             <p className="w-full opacity-70">Bachelor of Computer Applications (BCA)</p>
           </section>
         </section>
