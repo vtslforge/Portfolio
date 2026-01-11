@@ -11,7 +11,7 @@ const Navbar = () => {
   return () => window.removeEventListener("resize", onResize);
 }, []);
   return (
-    <div className="bg-[#0e0822] w-full z-50 top-0 fixed h-12 flex justify-between items-center font-poppins pl-3 pr-3">
+    <div className="bg-[#020015] w-full z-50 top-0 fixed h-12 flex justify-between items-center font-poppins pl-3 pr-3">
         <p className="font-poppins font-medium text-xl">Vatsalya singh</p>
         <RiMenu4Fill onClick={()=>setOpen(!open)} className="relative md:hidden"/>
           <section    className={`absolute top-12 right-3 bg-[#0e0822] border border-[#00F5FF] text-black w-50 h-80 rounded-3xl flex justify-center items-center transition-all duration-2s ease-in-out ${open? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>

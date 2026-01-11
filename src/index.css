@@ -1,6 +1,6 @@
 @import "tailwindcss";
 :root{
-    background-color: #0e0822;
+    background-color: #020015;
 
 }
 @theme{
@@ -16,6 +16,7 @@
 }
 @theme{
   --font-poppins:"Poppins", sans-serif;
+  --font-source:"Source Code Pro", monospace;
 }
 /* Animation */
 
