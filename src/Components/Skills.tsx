@@ -2,7 +2,7 @@ const Skills = () => {
   return (
     <main className="pl-3 pr-3 pt-12 md:pt-0 space-y-6 font-poppins md:p-15 flex flex-col items-center w-full">
       <article className="flex 2xl:w-3/4 w-full">
-        <section className="flex flex-col md:flex-row  overflow-scroll gap-3 hide-scrollbar">
+        <section className="flex flex-col md:flex-row  gap-3 hide-scrollbar">
           {/* card 2 start here -> */}
           <section className="h-fit w-screen gap-3 flex flex-col">
             <h1 className="text-4xl">Skills</h1>
