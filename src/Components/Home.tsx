@@ -8,7 +8,7 @@ import Skills from "./Skills"
 
 const Home = () => {
   return (
-    <div className=' text-white  flex flex-col'>
+    <div className=' text-white overflow-x-hidden flex flex-col'>
       <Hero/>
       <Navbar/>
       <Projects/>
