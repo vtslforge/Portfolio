@@ -1,8 +1,11 @@
+import { RiShareForwardLine } from "@remixicon/react";
 const Projects = () => {
   return (
     <main className="pl-3 pr-3 pt-12 md:pt-0 space-y-6 font-poppins md:p-15 flex flex-col items-center w-full">
       <header className="flex w-full justify-between 2xl:w-3/4">
-        <h1 className="text-4xl">Projects</h1>
+        <h1 className="text-4xl" id="project">
+          Projects
+        </h1>
       </header>
       <article className="flex 2xl:w-3/4 w-full">
         <section className="flex flex-row md:flex-row overflow-scroll gap-3 hide-scrollbar">
@@ -13,7 +16,7 @@ const Projects = () => {
                 <img
                   className="rounded-t-lg h-full w-full object-center object-cover"
                   src="/port.png"
-                  alt=""
+                  alt="logo"
                 />
               </div>
               <div className="h-1/2 w-full flex flex-col pl-3 pr-3">
@@ -26,8 +29,14 @@ const Projects = () => {
                     Current latest
                   </p>
                   <div className="w-full h-[20%] flex items-center gap-3">
-                    <button className="lg border h-10 w-20 rounded-3xl">
-                      Share
+                    <button
+                      onClick={() =>
+                        navigator.share?.({ url: window.location.href })
+                      }
+                      aria-label="share"
+                      className="flex gap-2 w-fit p-2 items-center justify-center  rounded-2xl cursor-pointer"
+                    >
+                      <RiShareForwardLine />
                     </button>
                   </div>
                 </div>
