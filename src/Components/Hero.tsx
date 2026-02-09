@@ -3,14 +3,14 @@ import { RiArrowRightUpLine, RiGithubFill, RiMailLine } from "@remixicon/react";
 const Hero = () => {
   return (
     <main
-      className="min-h-screen pt-28 md:pt-32 px-6 md:px-12 2xl:items-center flex flex-col gap-16 font-poppins relative overflow-hidden"
+      className="min-h-screen px-6 md:px-12 py-20 md:py-24 2xl:items-center flex flex-col justify-center gap-16 font-poppins relative overflow-hidden"
       id="home"
     >
       <div className="absolute -top-20 right-0 h-72 w-72 rounded-full bg-[#00F5FF]/10 blur-3xl cinematic-drift" />
       <div className="absolute -bottom-16 left-0 h-80 w-80 rounded-full bg-[#6d28d9]/10 blur-[120px] cinematic-drift-slow" />
       <header className="flex flex-col gap-14 2xl:w-3/4 2xl:mx-auto">
-        <div className="flex flex-col gap-12 items-center lg:flex-row">
-          <section className="flex flex-col justify-center gap-6 lg:w-3/5">
+        <div className="flex flex-col gap-12 items-center">
+          <section className="flex flex-col justify-center items-center text-center gap-6 lg:w-3/4 mx-auto">
             <span className="uppercase tracking-[0.35em] text-xs text-[#00F5FF]/80 fade-up">
               Full-stack developer
             </span>
@@ -24,7 +24,7 @@ const Hero = () => {
               I care about clean architecture, measurable impact, and shipping
               quality.
             </p>
-            <div className="flex flex-wrap gap-6 fade-up-delayed">
+            <div className="flex flex-wrap justify-center gap-6 fade-up-delayed">
               <a
                 href="mailto:vtslforge@gmail.com?subject=Hello&body=Hi%20Vatsalya,"
                 className="flex items-center gap-2 rounded-2xl border border-[#00F5FF]/50 px-5 py-3 text-sm uppercase tracking-[0.2em] hover:border-[#00F5FF] transition"
@@ -51,30 +51,20 @@ const Hero = () => {
               </a>
             </div>
           </section>
-          <section className="lg:w-2/5 flex justify-center items-center">
-            <div className="relative fade-up-delayed cinematic-sheen">
-              <div className="absolute inset-0 rounded-[36px] bg-gradient-to-br from-[#00F5FF]/25 via-transparent to-white/5 blur-3xl soft-glow" />
-              <img
-                className="relative aspect-square w-64 md:w-80 lg:w-96 rounded-[36px] object-cover bg-[#020015] ring-1 ring-white/5 shadow-[0_30px_80px_rgba(2,0,21,0.55)]"
-                src="/awww.png"
-                alt="Portrait"
-              />
-            </div>
-          </section>
         </div>
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              title: "Performance-first",
-              body: "Optimize for speed, lighthouse, and real-user metrics.",
+              title: "Clean UI",
+              body: "Designs that feel effortless and easy to navigate.",
             },
             {
-              title: "Scalable stacks",
-              body: "Composable frontend with reliable backend foundations.",
+              title: "Fast loads",
+              body: "Snappy performance that keeps users engaged.",
             },
             {
-              title: "SEO + growth",
-              body: "Structure content for discoverability and retention.",
+              title: "Scalable",
+              body: "Flexible systems built to grow with your product.",
             },
           ].map((item) => (
             <article
@@ -92,9 +82,6 @@ const Hero = () => {
           <p className="font-poppins">
             With great code comes great console warnings.
           </p>
-          <span className="absolute -top-7 h-10 w-10 flex items-center justify-center bg-[#020015] text-5xl left-5 rounded-full font-mono">
-            "
-          </span>
         </section>
       </article>
     </main>

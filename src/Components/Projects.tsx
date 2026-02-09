@@ -6,7 +6,7 @@ const projects = [
     stack: "React + Tailwind",
     description: "Personal portfolio focused on performance and clean UX.",
     status: "Live",
-    link: "https://github.com/vtslforge/vtslPortfolio",
+    link: "https://github.com/vtslforge/Portfolio",
   },
   {
     title: "College Media",
@@ -57,20 +57,13 @@ const Projects = () => {
                 <p className="text-2xl md:text-3xl font-semibold">
                   {project.title}
                 </p>
-                <p className="text-sm opacity-70 mt-2">
-                  Clean UI • Fast loads • Scalable
-                </p>
-              </div>
-              <div className="relative flex gap-2 text-xs uppercase tracking-[0.2em] opacity-60">
-                <span className="px-3 py-1 rounded-full border border-white/10">
-                  UX
-                </span>
-                <span className="px-3 py-1 rounded-full border border-white/10">
-                  Performance
-                </span>
-                <span className="px-3 py-1 rounded-full border border-white/10">
-                  SEO
-                </span>
+                <div className="mt-4 flex items-center gap-2 opacity-60">
+                  <span className="h-px flex-1 bg-white/10" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#00F5FF]/70" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-white/30" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-white/20" />
+                  <span className="h-px flex-1 bg-white/10" />
+                </div>
               </div>
             </div>
             <div className="flex flex-col gap-5 p-6">

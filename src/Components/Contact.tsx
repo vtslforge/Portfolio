@@ -35,7 +35,7 @@ const Contact = () => {
             <p className="text-sm uppercase tracking-[0.25em] opacity-70">
               Location
             </p>
-            <p className="text-lg">Uttar Pradesh, India</p>
+            <p className="text-lg">Bengaluru, India</p>
             <p className="opacity-70 text-sm">Open to remote work.</p>
           </article>
           <article
@@ -47,7 +47,7 @@ const Contact = () => {
             </p>
             <div className="flex items-center gap-5">
               <a
-                href="https://x.com/vtslforge"
+                href="https://x.com/ZoltXero"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit X profile"

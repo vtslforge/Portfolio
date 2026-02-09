@@ -58,11 +58,11 @@ const Skills = () => {
           <article className="space-y-4 reveal">
             <h1 className="text-4xl md:text-5xl">About Me</h1>
             <p className="opacity-70 leading-relaxed">
-              Hello, I am Vatsalya Singh. I am a self-taught full-stack web
-              developer based in Uttar Pradesh, India. I enjoy building
-              responsive, modern web applications from scratch and turning ideas
-              into clean, user-friendly digital experiences. I am constantly
-              learning, improving my skills, and working on real-world projects.
+              Hello, I am Vatsalya Singh, a self-taught full-stack web developer
+              based in Bengaluru, India. I enjoy building responsive, modern web
+              applications from scratch and turning ideas into clean,
+              user-friendly digital experiences. I am constantly learning,
+              improving my skills, and working on real-world projects.
             </p>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5 card-float reveal">
