@@ -1,12 +1,12 @@
-import { Routes, Route } from "react-router"
-import Layout from "./layout/Layout"
+import { Route, Routes } from "react-router";
+import PortfolioLayout from "./layout/PortfolioLayout";
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />} />
+      <Route path="/" element={<PortfolioLayout />} />
     </Routes>
-  )
-}
+  );
+};
 
-export default App
+export default App;

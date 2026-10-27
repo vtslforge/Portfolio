@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import effectConfig from "../config/vtslImageConfig";
+import ditherAsciiImageConfig from "../config/ditherAsciiImageConfig";
 
-interface VtslImageProps {
+interface AsciiDitherImageProps {
   imageSrc: string;
 }
 
@@ -22,7 +22,7 @@ const readAsDataUrl = (blob: Blob): Promise<string> =>
     reader.readAsDataURL(blob);
   });
 
-const VtslImage = ({ imageSrc }: VtslImageProps) => {
+const AsciiDitherImage = ({ imageSrc }: AsciiDitherImageProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -74,7 +74,7 @@ const VtslImage = ({ imageSrc }: VtslImageProps) => {
         if (cancelled) return;
 
         const result = await mount(container, {
-          ...effectConfig,
+          ...ditherAsciiImageConfig,
           assets: [{ slot: "source", use: "image", data: imageData }],
         });
 
@@ -111,4 +111,4 @@ const VtslImage = ({ imageSrc }: VtslImageProps) => {
   );
 };
 
-export default VtslImage;
+export default AsciiDitherImage;

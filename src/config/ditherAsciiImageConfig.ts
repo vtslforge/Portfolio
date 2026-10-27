@@ -1,4 +1,4 @@
-const effectConfig = {
+const ditherAsciiImageConfig = {
   settings: {
     look: "neonglyphs",
     mode: "art",
@@ -81,4 +81,4 @@ const effectConfig = {
   assets: [],
 };
 
-export default effectConfig;
+export default ditherAsciiImageConfig;
