@@ -1,6 +1,7 @@
 import AboutSection from "../components/AboutSection";
 import GitHubContribution from "../components/GitHubContribution";
 import ProfilePortrait from "../components/ProfilePortrait";
+import ProjectDeck from "../components/ProjectDeck";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
         <AboutSection />
       </header>
       <GitHubContribution />
+      <ProjectDeck/>
     </main>
   );
 };

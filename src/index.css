@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 :root {
+  overflow-x: hidden;
   background-color: #0d0e0f;
   font-family: "JetBrains Mono", monospace;
   --font-jetbrains: "JetBrains Mono", monospace;

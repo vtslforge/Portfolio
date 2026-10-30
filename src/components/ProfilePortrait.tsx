@@ -9,10 +9,10 @@ const ProfilePortrait = () => {
       </figure>
 
       <section className="flex gap-3">
-        <button className="w-fit border border-amber-50/10 p-1 px-2 text-sm text-(--color-primary-text)">
+        <button className="w-fit border border-amber-50/10 p-1 px-2 text-sm text-(--color-primary-text) hover:border-[#b9c57244] cursor-pointer">
           Activity
         </button>
-        <button className="w-fit border border-amber-50/10 p-1 px-2 text-sm text-(--color-primary-text)">
+        <button className="w-fit border border-amber-50/10 p-1 px-2 text-sm text-(--color-primary-text) hover:border-[#b9c57244] cursor-pointer">
           Coding
         </button>
       </section>
