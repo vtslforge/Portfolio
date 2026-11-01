@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const skills = [
   { name: "TypeScript", color: "#d3869b" },
   { name: "Python", color: "#b8c572" },
@@ -35,6 +37,7 @@ const socialLinks = [
 ];
 
 const AboutSection = () => {
+  const [Resume, setResume] = useState<string>("Resume");
   return (
     <main className="flex-5 flex flex-col justify-evenly mt-10 gap-8 md:gap-6 md:mt-0">
       <p className="text-(--color-primary-text) text-sm">~ About me</p>
@@ -83,8 +86,11 @@ const AboutSection = () => {
           </a>
         ))}
       </section>
-      <button className=" md:text-[1rem] w-fit border border-amber-50/10 text-(--color-primary-text) text-sm p-1 px-2 hover:border-[#b9c57244] cursor-pointer">
-        Resume
+      <button
+        onClick={() => setResume("Cooking soon")}
+        className=" md:text-[1rem] w-fit border border-amber-50/10 text-(--color-primary-text) text-sm p-1 px-2 hover:border-[#b9c57244] cursor-pointer"
+      >
+        {Resume}
       </button>
     </main>
   );
