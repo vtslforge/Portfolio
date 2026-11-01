@@ -36,7 +36,7 @@ const socialLinks = [
 
 const AboutSection = () => {
   return (
-    <main className="flex-5 flex flex-col justify-evenly mt-10 gap-8 md:gap-9 md:mt-0">
+    <main className="flex-5 flex flex-col justify-evenly mt-10 gap-8 md:gap-6 md:mt-0">
       <p className="text-(--color-primary-text) text-sm">~ About me</p>
       <p className="text-(--color-bold-text) font-extrabold text-xl md:text-2xl">
         Vatsaya Singh

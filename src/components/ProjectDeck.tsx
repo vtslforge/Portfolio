@@ -1,4 +1,3 @@
-
 const ProjectDeck = () => {
   const projects = [
     {
@@ -18,11 +17,27 @@ const ProjectDeck = () => {
       link: "https://orbitspace16.netlify.app/",
       github: "https://github.com/vtslforge/OrbitSpace",
     },
+
+    {
+      projectName: "Rootwise",
+      description:
+        "Rootwise under development - A social platfrom for your ideas",
+
+      tech: [
+        { name: "TypeScript", color: "#d3869b" },
+        { name: "React", color: "#88bfb3" },
+        { name: "BetterAuth", color: "#a76b7b" },
+        { name: "Tailwind CSS", color: "#88bfb3" },
+        { name: "Express", color: "#d4be98" },
+      ],
+
+      image: "/Projects/Rootwise.png",
+      github: "https://github.com/vtslforge/Rootwise.git",
+    },
   ];
 
   return (
     <main className="mt-12" aria-labelledby="projects-heading">
-
       {/* Projects Heading */}
       <div className="flex items-center gap-2">
         <img
@@ -59,8 +74,7 @@ const ProjectDeck = () => {
             </figure>
 
             {/* Project Details */}
-            <div className="aspect-video flex-1 flex flex-col gap-3">
-
+            <div className="flex-1 flex flex-col gap-4">
               <h3
                 id={`project-${project.projectName}`}
                 className="text-lg text-[#b8c572]"
@@ -89,28 +103,35 @@ const ProjectDeck = () => {
               </ul>
 
               {/* Project Links */}
+              {/* Project Links */}
               <div className="mt-auto flex flex-wrap gap-2">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`View ${project.projectName} live demo (opens in a new tab)`}
+                    className="inline-flex items-center justify-center"
+                  >
+                    <span className="w-fit border border-amber-50/10 text-(--color-primary-text) text-[12px] p-1 px-2 hover:border-[#b9c57244] cursor-pointer">
+                      Live Demo
+                    </span>
+                  </a>
+                )}
 
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`View ${project.projectName} live demo (opens in a new tab)`}
-                  className="inline-flex items-center justify-center"
-                >
-                  <span className=" w-fit border border-amber-50/10 text-(--color-primary-text) text-sm p-1 px-2 hover:border-[#b9c57244] cursor-pointer">Live Demo</span>
-                </a>
-
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`View ${project.projectName} source code on GitHub (opens in a new tab)`}
-                  className="inline-flex items-center justify-center"
-                >
-                  <span className=" w-fit border border-amber-50/10 text-(--color-primary-text) text-sm p-1 px-2 hover:border-[#b9c57244] cursor-pointer">Source Code</span>
-                </a>
-
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`View ${project.projectName} source code on GitHub (opens in a new tab)`}
+                    className="inline-flex items-center justify-center"
+                  >
+                    <span className="w-fit border border-amber-50/10 text-(--color-primary-text) text-[12px] p-1 px-2 hover:border-[#b9c57244] cursor-pointer">
+                      Source Code
+                    </span>
+                  </a>
+                )}
               </div>
             </div>
           </article>
