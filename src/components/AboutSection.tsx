@@ -42,7 +42,7 @@ const AboutSection = () => {
     <main className="flex-5 flex flex-col justify-evenly mt-10 gap-8 md:gap-6 md:mt-0">
       <p className="text-(--color-primary-text) text-sm">~ About me</p>
       <p className="text-(--color-bold-text) font-extrabold text-xl md:text-2xl">
-        Vatsaya Singh
+        Vatsalya Singh
       </p>
       <p className="text-(--color-primary-text) text-sm md:text-[1rem]">
         I'm a full-stack developer who loves building AI-powered software,
