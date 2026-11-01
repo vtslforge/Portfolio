@@ -33,7 +33,7 @@ const Whyme = () => {
           and getting a little better every day.
           <br />
           <br />
-          And yes, I'm single, but my code is committed.
+          And yes, More committed to code then her.
         </p>
       </article>
     </main>
