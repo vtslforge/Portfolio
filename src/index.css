@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import "tailwindcss";
 
@@ -5,7 +6,33 @@
   overflow-x: hidden;
   background-color: #0d0e0f;
   font-family: "JetBrains Mono", monospace;
+
   --font-jetbrains: "JetBrains Mono", monospace;
   --color-primary-text: #7c6f64;
   --color-bold-text: #cab19c;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1e1e;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1f1e1e;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1f1e1e transparent;
 }
